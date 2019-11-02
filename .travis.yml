@@ -1,4 +1,4 @@
 language: python
 install: pip install -r requirements.txt
 script: coverage run test_rpn.py
-after-success: coveralls
+after_success: coveralls
