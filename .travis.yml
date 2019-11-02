@@ -1,6 +1,4 @@
 language: python
 install: pip install -r requirements.txt
-script: python -m unittest
-after-success:
-  - coverage run -m unittest
-  - coveralls
+script: coverage run test_rpn.py
+after-success: coveralls
