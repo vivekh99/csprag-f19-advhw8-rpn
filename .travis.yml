@@ -1,11 +1,6 @@
-language : python
-
-install
-  pip install -r requirements.txt
-
-script:
-  python -m unittest
-
+language: python
+install: pip install -r requirements.txt
+script: python -m unittest
 after-success:
-  coverage run -m unittest
-  coveralls
+  - coverage run -m unittest
+  - coveralls
